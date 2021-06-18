@@ -1,0 +1,8 @@
+services:
+  gradle-remote-cache:
+    image: "gradle/build-cache-node"
+    ports:
+      - "5000:5071"
+    volumes:
+      - "/opt/build-cache-node:/data"
+
